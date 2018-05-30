@@ -45,7 +45,9 @@ class Song
   end
   
   def self.new_from_filename(filename)
-    song_array = filename.split(/[( - ).]/)
+    song_array = filename.split(' - ').join(' ').split('.')
+    song_array.pop
+    song_array.join.split(' ')
   end
 
 end
