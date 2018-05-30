@@ -23,8 +23,7 @@ class Song
   end
   
   def self.create_by_name(name)
-    self.new_by_name
-    self.create
+    self.new_by_name.create
   end
 
 end
